@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+        font-family: Rubik;
+    }
+}
+
+@layer components {
+    body {
+        @apply text-base;
+    }
+
+    h2 {
+        @apply text-xl;
+    }
+
+    .btn-yellow {
+        @apply bg-custom-yellow text-white hover:bg-transparent hover:text-custom-yellow hover:border-custom-yellow;
+    }
+
+    .btn {
+        @apply transition ease-in-out duration-300 py-2 px-8 border-2 border-transparent;
+    }
+}
