@@ -10,8 +10,17 @@
 
         <div class="md:order-3 flex items-center">
             @if (Route::has('login'))
-                <div>
                     @auth
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+
+                            <div :href="route('logout')"
+                                    onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                {{ __('Log Out') }}
+                        </div>
+                        </form>
+
                         <a href="{{ url('/dashboard') }}"> photo</a>
                     @else
                         <a href="{{ route('login') }}"> Connexion</a>
@@ -20,7 +29,6 @@
                             <a href="{{ route('register') }}">Inscription</a>
                         @endif
                     @endauth
-                </div>
             @endif
         </div>
 
