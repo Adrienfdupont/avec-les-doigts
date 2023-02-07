@@ -3,22 +3,24 @@
 @tailwind utilities;
 
 @layer base {
-    html {
+    @font-face {
         font-family: Rubik;
+        src: url("fonts/Rubik-Regular.ttf");
     }
-}
 
-@layer components {
-    body {
+    html {
+        @apply font-Rubik;
         @apply text-base;
     }
 
     h2 {
         @apply text-xl;
     }
+}
 
+@layer components {
     .btn-yellow {
-        @apply bg-custom-yellow text-white hover:bg-transparent hover:text-custom-yellow hover:border-custom-yellow;
+        @apply bg-button-yellow text-white hover:bg-transparent hover:text-button-yellow hover:border-button-yellow;
     }
 
     .btn {

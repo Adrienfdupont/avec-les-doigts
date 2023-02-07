@@ -9,8 +9,9 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                "custom-red": "#aa0000",
-                "custom-yellow": "#ffc700",
+                "header-red": "#aa0000",
+                "button-yellow": "#ffc700",
+                "main-bg-color": "#fffbe4",
             },
             keyframes: {
                 "filter-slide-down": {
@@ -27,6 +28,9 @@ module.exports = {
                     "filter-slide-down 0.3s ease-in-out forwards",
                 "filter-slide-up": "filter-slide-up 0.3s ease-in-out forwards",
             },
+        },
+        fontFamily: {
+            Rubik: ["Rubik", "sans-serif"],
         },
     },
 

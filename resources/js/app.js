@@ -24,6 +24,7 @@ document.addEventListener("click", (e) => {
             "animate-filter-slide-down",
             "animate-filter-slide-up"
         );
+        console.log("test");
     }
 });
 

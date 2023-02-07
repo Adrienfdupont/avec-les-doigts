@@ -1,5 +1,5 @@
 <header>
-    <section class="bg-custom-red flex flex-wrap justify-between w-full p-2 text-white">
+    <section class="bg-header-red flex flex-wrap justify-between w-full p-2 text-white">
         <div>
             <a href="/">
                 <h1>
@@ -14,16 +14,16 @@
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
 
-                            <div :href="route('logout')"
-                                    onclick="event.preventDefault();
-                                                this.closest('form').submit();">
-                                {{ __('Log Out') }}
-                        </div>
+                            <div class="cursor-pointer mr-2" :href="route('logout')" onclick="event.preventDefault();this.closest('form').submit();">
+                                Déconnexion
+                            </div>
                         </form>
 
-                        <a href="{{ url('/dashboard') }}"> photo</a>
+                        <a href="{{ url('/dashboard') }}">
+                            <img src="" alt="Dashboard">
+                        </a>
                     @else
-                        <a href="{{ route('login') }}"> Connexion</a>
+                        <a class="mr-2" href="{{ route('login') }}"> Connexion</a>
 
                         @if (Route::has('register'))
                             <a href="{{ route('register') }}">Inscription</a>
@@ -38,7 +38,7 @@
         </div>
     </section>
 
-    <section id="filters" class="absolute -translate-y-full inset-x-0 p-4 shadow-2xl transition-opacity -z-40">
+    <section id="filters" class="absolute -translate-y-full inset-x-0 p-4 shadow-2xl transition-opacity -z-10">
         <h2 class="md:flex md:px-32">Effectuez une recherche filtrée</h2>
         <form action="">
             <div class="md:flex md:px-32 mt-4">
