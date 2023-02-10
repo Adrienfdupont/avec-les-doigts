@@ -20,7 +20,11 @@
 
 @layer components {
     .btn-yellow {
-        @apply bg-button-yellow text-white hover:bg-transparent hover:text-button-yellow hover:border-button-yellow;
+        @apply bg-transparent rounded-full text-button-yellow border-button-yellow hover:bg-button-yellow hover:text-white;
+    }
+
+    .btn-blue {
+        @apply bg-transparent rounded-full text-button-blue border-button-blue hover:bg-button-blue hover:text-white;
     }
 
     .btn {

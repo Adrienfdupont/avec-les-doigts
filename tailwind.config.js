@@ -11,6 +11,7 @@ module.exports = {
             colors: {
                 "header-red": "#aa0000",
                 "button-yellow": "#ffc700",
+                "button-blue": "#5d59ff",
                 "main-bg-color": "#fffbe4",
             },
             keyframes: {
