@@ -3,8 +3,8 @@
         @csrf
 
         <!-- Profile picture -->
-        <div class="flex flex-col items-center mb-4 cursor-pointer">
-            <div class="mb-2">
+        <div class="flex flex-col items-center mb-4">
+            <div class="mb-2 cursor-pointer">
                 <img id="uploaded-profile-picture" class="rounded-full w-24 aspect-[1/1] object-cover" src="{{ url('images/assets/user.png') }}" />
                 <input id="upload-profile-picture" class='hidden' type='file' accept='.jpg, .jpeg, .png' name='user-image'>
             </div>
@@ -53,7 +53,7 @@
                 {{ __('Déjà inscrit ?') }}
             </a>
 
-            <button class="btn btn-blue ml-2">INSCRIPTION</button>
+            <button class="btn btn-blue ml-8">INSCRIPTION</button>
         </div>
     </form>
 </x-guest-layout>
