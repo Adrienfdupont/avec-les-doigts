@@ -14,7 +14,7 @@
 
         @include('partials.header')
 
-        <main class="container mx-auto bg-main-bg-color -z-20">
+        <main class="container mx-auto bg-main-bg-color -z-20 p-4">
             @yield('content')
         </main>
 
