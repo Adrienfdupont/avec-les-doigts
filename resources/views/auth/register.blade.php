@@ -8,7 +8,9 @@
                 <img id="uploaded-profile-picture" class="rounded-full w-24 aspect-[1/1] object-cover" src="{{ url('images/assets/user.png') }}" />
                 <input id="upload-profile-picture" class='hidden' type='file' accept='.jpg, .jpeg, .png' name='user-image'>
             </div>
-            <div>Ajouter une photo (optionnel)</div>
+            <div>
+                Ajouter une photo (optionnel)
+            </div>
         </div>
 
         <!-- Name -->
@@ -50,10 +52,12 @@
 
         <div class="flex items-center justify-end mt-4">
             <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
-                {{ __('Déjà inscrit ?') }}
+                Déjà inscrit ?
             </a>
 
-            <button class="btn btn-blue ml-8">INSCRIPTION</button>
+            <button class="btn btn-blue ml-8">
+                INSCRIPTION
+            </button>
         </div>
     </form>
 </x-guest-layout>
