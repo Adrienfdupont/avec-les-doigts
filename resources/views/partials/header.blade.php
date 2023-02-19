@@ -11,18 +11,12 @@
         <div class="md:order-3 flex items-center">
             @if (Route::has('login'))
                 @auth
-                    <form method="POST" action="{{ route('logout') }}">
-                        @csrf
-                        <div class="cursor-pointer mr-2" :href="route('logout')" onclick="event.preventDefault();this.closest('form').submit();">
-                            Déconnexion
-                        </div>
-                    </form>
+                    <a href="{{ url('/dashboard') }}" class="ml-8">
+                        <img src="{{ url('images/assets/user.png') }}" alt="Dashboard" class="w-8">
+                    </a>
                 @else
-                    <a class="mr-2" href="{{ route('login') }}"> Connexion</a>
+                    <a href="{{ route('login') }}"> Connexion</a>
                 @endauth
-                <a href="{{ url('/dashboard') }}">
-                    <img src="" alt="Dashboard">
-                </a>
             @endif
         </div>
 
