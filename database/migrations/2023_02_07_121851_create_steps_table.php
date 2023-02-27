@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('steps', function (Blueprint $table) {
             $table->id();
-            $table->text('image_path')->nullable();
+            $table->text('image')->nullable();
             $table->text('description');
             $table->foreignId('recipe_id')->constrained();
             $table->timestamps();

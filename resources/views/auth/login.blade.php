@@ -34,7 +34,11 @@
             </label>
         </div>
 
-        <div class="flex items-center justify-end mt-4">
+        <div class="flex items-center justify-between mt-4">
+
+            <div>
+                <a href="{{ route('home') }}" class="hover:underline">Accueil</a>
+            </div>
 
             <div class="flex flex-col">
                 @if (Route::has('password.request'))

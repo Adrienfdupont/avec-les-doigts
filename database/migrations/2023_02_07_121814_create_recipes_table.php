@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('recipes', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->text('image_path');
+            $table->text('image');
             $table->enum('difficulty', [1, 2, 3]);
             $table->enum('cost', ["bon marché", "abordable", "onéreux"]);
             $table->enum('time', ['< 15 min', '< 30 min', '< 45 min', '< 1 h', '> 1 h']);
